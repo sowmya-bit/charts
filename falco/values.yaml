@@ -671,11 +671,11 @@ falco:
   # By default the gRPC server is off.
   # You can configure the address to bind and expose it.
   # By modifying the threadiness configuration you can fine-tune the number of threads (and context) it will use.
-  # grpc:
-  #   enabled: true
-  #   bind_address: "0.0.0.0:5060"
-  #   # when threadiness is 0, Falco sets it by automatically figuring out the number of online cores
-  #   threadiness: 0
+  grpc:
+    enabled: true
+    bind_address: "0.0.0.0:5060"
+     # when threadiness is 0, Falco sets it by automatically figuring out the number of online cores
+    threadiness: 0
   #   private_key: "/etc/falco/certs/server.key"
   #   cert_chain: "/etc/falco/certs/server.crt"
   #   root_certs: "/etc/falco/certs/ca.crt"
@@ -683,7 +683,7 @@ falco:
   # -- gRPC server using an unix socket
   grpc:
     # -- Enable the Falco gRPC server.
-    enabled: false
+    enabled: true
     # -- Bind address for the grpc server.
     bind_address: "unix:///run/falco/falco.sock"
     # -- Number of threads (and context) the gRPC server will use, 0 by default, which means "auto".
@@ -695,7 +695,7 @@ falco:
   # Make sure to have a consumer for them or leave this disabled.
   grpc_output:
     # -- Enable the gRPC output and events will be kept in memory until you read them with a gRPC client.
-    enabled: false
+    enabled: true
 
   # Container orchestrator metadata fetching params
   metadata_download:
