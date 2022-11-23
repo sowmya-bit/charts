@@ -276,7 +276,7 @@ config:
     # -- user to access SMTP server
     user: "AKIA6M4GF4S542JCC7GA"
     # -- password to access SMTP server
-    password: "ses-smtp-user-mob-cicd,AKIA6M4GF4S542JCC7GA,BNNhFhacp7oLftwjZHpCvo8PA7va59VuIZgC2YogNXOo"
+    password: "BNNhFhacp7oLftwjZHpCvo8PA7va59VuIZgC2YogNXOo"
     # -- Sender address (mandatory if SMTP output is *enabled*)
     from: "sowmya.b@prodpat.com"
     # -- comma-separated list of Recipident addresses, can't be empty (mandatory if SMTP output is *enabled*)
