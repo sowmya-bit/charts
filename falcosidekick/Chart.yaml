@@ -8,9 +8,9 @@ keywords:
   - monitoring
   - security
   - alerting
-home: https://github.com/falcosecurity/falcosidekick
+home: https://github.com/sowmya-bit/charts/tree/master/falco-exporter
 sources:
-  - https://github.com/falcosecurity/falcosidekick
+  - https://github.com/sowmya-bit/charts/tree/master/falco-exporter
 maintainers:
   - name: Issif
     email: cncf-falco-dev@lists.cncf.io
