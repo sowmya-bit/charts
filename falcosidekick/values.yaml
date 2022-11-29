@@ -269,23 +269,22 @@ config:
       streamname: ""
       # -- minimum priority of event to use this output, order is `emergency\|alert\|critical\|error\|warning\|notice\|informational\|debug or ""`
       minimumpriority: ""
- smtp:
+
+  smtp:
     # -- "host:port" address of SMTP server, if not empty, SMTP output is *enabled*
-    hostport: "email-smtp.us-east-1.amazonaws.com:465"
+    hostport: ""
     # -- user to access SMTP server
-    user: "AKIA6M4GF4S542JCC7GA"
+    user: ""
     # -- password to access SMTP server
-    password: "BNNhFhacp7oLftwjZHpCvo8PA7va59VuIZgC2YogNXOo"
+    password: ""
     # -- Sender address (mandatory if SMTP output is *enabled*)
-    from: "sowmya.b@prodpat.com"
+    from: ""
     # -- comma-separated list of Recipident addresses, can't be empty (mandatory if SMTP output is *enabled*)
-    to: "sowmya.b@prodapt.com,DL-LLA-Peacock-Devops@prodapt.com"
+    to: ""
     # -- html, text
     outputformat: "html"
     # -- minimum priority of event to use this output, order is `emergency\|alert\|critical\|error\|warning\|notice\|informational\|debug or ""`
-    minimumpriority: "emergency\|alert\|critical\|error\|warning\|notice\|informational\|debug"
-
-  
+    minimumpriority: ""
 
   opsgenie:
     # -- Opsgenie API Key, if not empty, Opsgenie output is *enabled*
