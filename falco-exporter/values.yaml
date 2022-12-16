@@ -103,7 +103,7 @@ affinity: {}
 
 serviceMonitor:
   # Enable the deployment of a Service Monitor for the Prometheus Operator.
-  enabled: false
+  enabled: true
   # Specify Additional labels to be added on the Service Monitor.
   additionalLabels: {}
   # Specify a user defined interval. When not specified Prometheus default interval is used.
@@ -112,7 +112,7 @@ serviceMonitor:
   scrapeTimeout: ""
 
 grafanaDashboard:
-  enabled: false
+  enabled: true
   namespace: default
   prometheusDatasourceName: Prometheus
 scc:
